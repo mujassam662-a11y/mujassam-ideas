@@ -57,8 +57,8 @@ function plain(i){
 }
 function card(i){
   const s=i.script;
-  return `<article class="card">
-    <div class="chips"><span class="chip">${esc(i.platform)}</span><span class="chip g">${esc(i.format)}</span></div>
+  return `<article class="card" id="i${i.id}">
+    <div class="chips"><span class="chip g">#${i.id}</span><span class="chip">${esc(i.platform)}</span><span class="chip g">${esc(i.format)}</span></div>
     <h2>${esc(i.title)}</h2>
     ${s?`<div class="hook">${esc(s.hook)}</div>`:`<p>${esc(i.summary)}</p>`}
     ${s?`<details><summary>السكريبت كامل</summary>
@@ -84,6 +84,14 @@ document.addEventListener("click",e=>{
   if(b.dataset.id){const i=IDEAS.find(x=>x.id==b.dataset.id);navigator.clipboard.writeText(plain(i)).then(()=>{b.textContent="اتنسخ";setTimeout(()=>b.textContent="انسخ",1500)}).catch(()=>{});}
 });
 draw();
+function openHash(){
+  const el = location.hash && document.getElementById(location.hash.slice(1));
+  if(!el) return;
+  const d = el.querySelector("details"); if(d) d.open = true;
+  el.scrollIntoView({block:"start"});
+}
+window.addEventListener("hashchange", openHash);
+openHash();
 </script>
 </body>
 </html>
