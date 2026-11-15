@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أفكار محتوى مجسّم</title>
+<meta name="description" content="أفكار محتوى معتمدة بسكريبتاتها، جاهزة للتصوير">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#1d2433;--muted:#6b7280;--line:#e6e2d9;--accent:#e8702a;--accent-soft:#fdf0e7;--navy:#1f2f4d}
+@media (prefers-color-scheme:dark){:root{--bg:#12161f;--card:#1b212d;--ink:#e9ecf2;--muted:#9aa3b2;--line:#2a3242;--accent:#f08a4b;--accent-soft:#2b2119;--navy:#9db4dd}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Cairo,system-ui,sans-serif;line-height:1.7}
+.wrap{max-width:980px;margin:0 auto;padding:28px 16px 60px}
+header h1{margin:0;font-size:1.7rem;color:var(--navy)}
+header p{margin:4px 0 0;color:var(--muted)}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 18px}
+.bar button{font:inherit;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:4px 14px;cursor:pointer}
+.bar button.on{background:var(--navy);color:var(--bg);border-color:var(--navy)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 14px;margin-bottom:16px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;font-size:.8rem}
+.chip{background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:1px 10px;font-weight:600}
+.chip.g{background:transparent;border:1px solid var(--line);color:var(--muted);font-weight:400}
+.card h2{font-size:1.15rem;margin:8px 0 4px}
+.hook{border-right:3px solid var(--accent);padding:2px 12px;margin:10px 0;font-weight:600}
+details{margin-top:8px}
+summary{cursor:pointer;color:var(--navy);font-weight:600}
+.scene{border-top:1px dashed var(--line);padding:10px 0;display:grid;grid-template-columns:72px 1fr;gap:4px 12px}
+.t{color:var(--accent);font-weight:700;font-size:.9rem}
+.lbl{color:var(--muted);font-size:.8rem}
+.cap{background:var(--bg);border-radius:10px;padding:10px 12px;margin-top:10px;white-space:pre-wrap}
+.tags{color:var(--navy);margin-top:6px;direction:rtl}
+.copy{float:left;font:inherit;font-size:.8rem;border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:8px;padding:2px 10px;cursor:pointer}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:.85rem;text-align:center;margin-top:30px}
+@media (max-width:560px){.scene{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>أفكار محتوى مجسّم</h1>
+    <p>17 فكرة معتمدة بسكريبتاتها، جاهزة للتصوير · آخر تحديث 2026-11-15</p>
+  </header>
+  <div class="bar" id="bar"></div>
+  <main id="list"></main>
+  <footer>مجسّم — mujassam.net</footer>
+</div>
+<script>
+const IDEAS = [{"id": 22, "platform": "فيسبوك", "format": "ريل", "title": "خايف تدفع قبل ما القطعة توصل؟ ده اللي بيحصل", "summary": "خايف تدفع قبل ما القطعة توصل؟ تعالى نوريك بيحصل إيه بعد ما الطلب يتدفع.", "date": "2026-11-12", "script": {"hook": "خايف تدفع قبل ما القطعة توصل؟ تعالى نوريك بيحصل إيه بعد ما الطلب يتدفع.", "caption": "خايف تدفع قبل ما القطعة توصل؟ ده اللي بيحصل بعد ما الطلب يتدفع: طباعة، فحص، تغليف، وشحن Bosta بتتبع لحظي. وبنعيد الطباعة لو الخطأ مننا. ارفع ملفك على mujassam.net وشوف السعر النهائي قبل ما تدفع.", "hashtags": [], "scenes": [{"time": "0-3 ث", "say": "خايف تدفع قبل ما القطعة توصل؟ تعالى نوريك بيحصل إيه بعد ما تدفع.", "on_screen": "خايف تدفع قبل ما القطعة توصل؟", "shot": "لقطة قريبة لموبايل في إيد صاحب النشاط بيظهر عليه إشعار طلب جديد اتدفع على mujassam.net. الاسم والبيانات متغطية. إضاءة الورشة الطبيعية."}, {"time": "3-10 ث", "say": "الدفع بيتم أونلاين، والسعر اللي شفته قبل الدفع هو السعر النهائي. أول ما الطلب يتأكد، القطعة بتدخل الطابعة.", "on_screen": "السعر النهائي قبل الدفع ← الطلب اتأكد", "shot": "لقطة من فوق للطابعة وهي بتبدأ طباعة القطعة بتاعة الطلب الحقيقي ده (ملف الطلب ظاهر على شاشة الطابعة أو السلايسر بدون بيانات العميل)."}, {"time": "10-18 ث", "say": "القطعة بتتطبع، وبعد ما تخلص بنشيل الدعامات ونفحصها بإيدينا.", "on_screen": "طباعة ← فحص", "shot": "لقطة قريبة للقطعة وهي بتتشال من على سطح الطابعة، وبعدها إيد بتشيل الدعامات وبتلف القطعة قدام الكاميرا للفحص."}, {"time": "18-25 ث", "say": "وبعد الفحص بنغلفها كويس عشان توصلك سليمة.", "on_screen": "تغليف", "shot": "لقطة ثابتة على الترابيزة: القطعة بتتلف وبتتحط في الكرتونة بالحماية، وبعدين الكرتونة بتتقفل وعليها الاستيكر."}, {"time": "25-33 ث", "say": "وبتتشحن مع Bosta، وتقدر تتابع شحنتك لحظة بلحظة.", "on_screen": "شحن Bosta بتتبع لحظي", "shot": "الشحنة بتتسلّم لمندوب Bosta (أو بتتحط في كيس الشحن). بعدها لقطة لموبايل عليه صفحة التتبع. بيانات العنوان متغطية."}, {"time": "33-40 ث", "say": "ولو فيه عيب في الطباعة والخطأ مننا، بنعيد الطباعة. ارفع ملفك على mujassam.net وشوف السعر.", "on_screen": "بنعيد الطباعة لو الخطأ مننا | ارفع ملفك على mujassam.net", "shot": "لقطة أخيرة للقطعة الجاهزة جنب الكرتونة. بعدها شاشة موبايل على صفحة رفع الملف في mujassam.net، واللوجو بألوان البراند (كحلي وبرتقالي)."}]}}, {"id": 20, "platform": "إنستجرام", "format": "ستوري", "title": "ممكن لينك الموقع؟ الرد جاهز في ستوري واحدة", "summary": "ستوري فيها تسجيل شاشة قصير لصفحة الرفع مع ستيكر اللينك، وفي الآخر «ارفع ملفك وشوف السعر». نثبتها في الهايلايت عشان تبقى الرد على السؤال.", "date": "2026-11-07"}, {"id": 19, "platform": "تيك توك", "format": "فيديو قصير", "title": "هل الخامة دي تتحمل الحرارة؟ جاوب قبل ما تطلب", "summary": "نصوّر قطعتين من خامتين مختلفتين ونشرح بالكلام فرق التحمل من غير أي أرقام حرارة. نأكد توفر ABS الأول لأنها مذكورة في صفحة الأسعار.", "date": "2026-11-07"}, {"id": 18, "platform": "يوتيوب", "format": "فيديو طويل", "title": "طلب حقيقي من الرفع لحد باب البيت", "summary": "نتابع طلب واحد كامل: الرفع، الدفع، الطباعة والفحص والتغليف، ثم الشحن وتتبع Bosta. نختم بفتح الكرتونة وشكل القطعة، من غير وعد بميعاد محدد.", "date": "2026-11-07"}, {"id": 17, "platform": "إنستجرام", "format": "ريل", "title": "شوف قطعتك 3D قبل ما تدفع", "summary": "تسجيل شاشة لرفع ملف، ثم المعاينة ثلاثية الأبعاد، واختيار الخامة والجودة. بعدها يظهر السعر ووقت الطباعة قبل الدفع، من غير ما حد يكلم حد.", "date": "2026-11-07"}, {"id": 15, "platform": "يوتيوب", "format": "فيديو قصير", "title": "سباق: طلب طباعة بالطريقة التقليدية ضد مجسّم", "summary": "شاشة منقسمة: ناحية تواصل وانتظار وتسعير ونقاش ودفع، وناحية رفع ومعاينة وسعر فوري ودفع وطباعة. بدون أسماء منافسين وبدون وعود بمدة تسليم.", "date": "2026-11-04"}, {"id": 14, "platform": "تيك توك", "format": "فيديو قصير", "title": "معاك 3D Model ومش معاك طابعة؟ ده الحل", "summary": "نبدأ بتصفح ملف في موقع تصاميم جاهزة، وبعدين نرفعه على الموقع ونشوف السعر. بعدها لقطة للقطعة المطبوعة وهي بتتسلّم، ونختم بخطوة «ارفع ملفك».", "date": "2026-11-04"}, {"id": 13, "platform": "فيسبوك", "format": "ريل", "title": "من الرفع للدفع: خطوات الطلب على الموقع في 30 ثانية", "summary": "تسجيل شاشة حقيقي: رفع الملف، معاينة 3D، اختيار الخامة، السعر النهائي، الدفع. نوضّح إن السعر واضح قبل الدفع. الرابط يتحط في أول كومنت وعلى الصفحة.", "date": "2026-11-04"}, {"id": 12, "platform": "فيسبوك", "format": "ريل", "title": "اتطبعت عندنا: حامل موبايل وترس وديكور محل", "summary": "مونتاج لقطات قريبة لقطع حقيقية اتطبعت لعملاء، من الطابعة للقطعة الجاهزة، بعد موافقة أصحابها. نختم بجملة «فكرتك... مجسمة» ونحط رابط الموقع في أول كومنت.", "date": "2026-11-04"}, {"id": 11, "platform": "إنستجرام", "format": "ريل", "title": "السعر اللي شفته هو اللي هتدفعه: ثابت 7 أيام", "summary": "تصوير شاشة لحساب سعر قطعة، وبعدها تقفل الموقع وترجع تفتحه ويفضل نفس السعر. تختم بجملة «ارفع ملفك وشوف السعر» مع الرابط في البايو.", "date": "2026-11-04"}, {"id": 10, "platform": "تيك توك", "format": "فيديو قصير", "title": "عايز تطبع حاجة؟ رد على أكتر سؤال بيجيلنا", "summary": "تسجيل شاشة 25 ثانية بصوت معتز: فتح mujassam.net، رفع ملف STL، معاينة 3D، ظهور السعر. وفي الآخر تقول إن الدفع أونلاين مقدماً وإن الطلب محتاج حساب.", "date": "2026-11-04"}, {"id": 9, "platform": "إنستجرام", "format": "ريل", "title": "قطعة غيار اتكسرت؟ من ملف STL لقطعة في إيدك", "summary": "نصوّر طباعة قطعة عملية بجد، زي حامل موبايل أو قطعة تركيب، من الملف والمعاينة لحد الطباعة والتغليف. نذكر إن الملف ممكن يتجاب من Printables أو Thingiverse.", "date": "2026-11-04"}, {"id": 8, "platform": "تيك توك", "format": "فيديو قصير", "title": "عميل بيحكي طلب إزاي من غير ما يكلم حد", "summary": "نصوّر عميل حقيقي، بعد موافقته، بيحكي في 30 ثانية تجربته من رفع الملف لحد الاستلام ويوري القطعة. من غير نص مكتوب له ومن غير وعود مدة أو خصم.", "date": "2026-11-04"}, {"id": 7, "platform": "فيسبوك", "format": "ريل", "title": "بدل ما تستنى رد المطبعة: ارفع ملفك وشوف السعر", "summary": "تسجيل شاشة حقيقي لرفع ملف STL ومعاينة 3D واختيار الخامة وظهور السعر النهائي، بجانب سيناريو الانتظار التقليدي. بنختم بكلمة «ارفع ملفك» واسم الموقع مكتوب على الشاشة.", "date": "2026-11-04"}, {"id": 6, "platform": "إنستجرام", "format": "ريل", "title": "من الطابعة للكرتونة: رحلة قطعتك جوه مجسّم", "summary": "لقطات حقيقية لقطعة بتتطبع، وبعدها الفحص والتغليف وتسليمها للشحن. من غير مؤثرات ولا وعود زيادة، بس اللي بيحصل فعلاً.", "date": "2026-11-04"}, {"id": 4, "platform": "فيسبوك", "format": "ريل", "title": "معاك فكرة ومفيش تصميم؟ هات ملف جاهز واطبعه", "summary": "تصوير شاشة بتدور على ملف في Printables أو MakerWorld وتنزله. بعدها ترفعه على mujassam.net وتشوف السعر فوراً، وتختم بلينك الموقع في أول تعليق.", "date": "2026-11-04"}, {"id": 2, "platform": "تيك توك", "format": "فيديو قصير", "title": "القطعة وصلت: فتح الأوردر وكلام صاحبه", "summary": "نصوّر بجد لحظة تغليف القطعة وفتحها عند عميل وافق على التصوير، أو نطلب منه فيديو أو صورة بعد الاستلام، وبعدها لقطة قريبة للتشطيب ورأيه بصوته. لو مفيش عميل موافق، نستخدم الشهادات المنشورة على الموقع كنص على الشاشة بإذن أصحابها. الخاتمة: «عندك STL؟ ارفعه واعرف السعر قبل ما تدفع».", "date": "2026-11-04"}];
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let filter = "";
+function plain(i){
+  const s=i.script; if(!s) return i.title+"\n"+i.summary;
+  return [i.title,"","الهوك: "+s.hook,"",...s.scenes.map(x=>`[${x.time}]\nيتقال: ${x.say}\nعلى الشاشة: ${x.on_screen}\nاللقطة: ${x.shot}`),"","الكابشن: "+s.caption,s.hashtags.join(" ")].join("\n");
+}
+function card(i){
+  const s=i.script;
+  return `<article class="card">
+    <div class="chips"><span class="chip">${esc(i.platform)}</span><span class="chip g">${esc(i.format)}</span></div>
+    <h2>${esc(i.title)}</h2>
+    ${s?`<div class="hook">${esc(s.hook)}</div>`:`<p>${esc(i.summary)}</p>`}
+    ${s?`<details><summary>السكريبت كامل</summary>
+      <button class="copy" data-id="${i.id}">انسخ</button>
+      ${s.scenes.map(x=>`<div class="scene"><div class="t">${esc(x.time)}</div><div>
+        <div>${esc(x.say)}</div>
+        ${x.on_screen?`<div><span class="lbl">على الشاشة: </span>${esc(x.on_screen)}</div>`:""}
+        ${x.shot?`<div><span class="lbl">اللقطة: </span>${esc(x.shot)}</div>`:""}</div></div>`).join("")}
+      ${s.caption?`<div class="cap">${esc(s.caption)}</div>`:""}
+      ${s.hashtags.length?`<div class="tags">${s.hashtags.map(esc).join(" ")}</div>`:""}
+    </details>`:""}
+  </article>`;
+}
+function draw(){
+  const items = IDEAS.filter(i=>!filter||i.platform===filter);
+  document.getElementById("list").innerHTML = items.length ? items.map(card).join("") : '<p class="empty">مفيش أفكار هنا لسه.</p>';
+  const plats=[...new Set(IDEAS.map(i=>i.platform))];
+  document.getElementById("bar").innerHTML = ["",...plats].map(p=>`<button data-p="${esc(p)}" class="${p===filter?"on":""}">${p?esc(p):"الكل"}</button>`).join("");
+}
+document.addEventListener("click",e=>{
+  const b=e.target.closest("button"); if(!b) return;
+  if(b.dataset.p!==undefined){filter=b.dataset.p;draw();}
+  if(b.dataset.id){const i=IDEAS.find(x=>x.id==b.dataset.id);navigator.clipboard.writeText(plain(i)).then(()=>{b.textContent="اتنسخ";setTimeout(()=>b.textContent="انسخ",1500)}).catch(()=>{});}
+});
+draw();
+</script>
+</body>
+</html>
