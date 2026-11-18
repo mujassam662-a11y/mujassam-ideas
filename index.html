@@ -59,6 +59,8 @@ function plain(i){
   const s=i.script; if(!s) return i.title+"\n"+i.summary;
   const out=[i.title,""];
   if(s.hook) out.push("الهوك: "+s.hook,"");
+  const lines=s.scenes.map(x=>String(x.say||"").trim()).filter(Boolean);
+  if(lines.length) out.push("السكريبت:",...lines,"");
   if(s.caption) out.push("الكابشن: "+s.caption);
   if(s.hashtags.length) out.push(s.hashtags.join(" "));
   return out.join("\n").trim();
