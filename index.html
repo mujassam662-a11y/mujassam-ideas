@@ -57,12 +57,11 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt
 let filter = "";
 function plain(i){
   const s=i.script; if(!s) return i.title+"\n"+i.summary;
-  const out=[i.title,""];
-  if(s.hook) out.push("الهوك: "+s.hook,"");
+  const out=[];
+  if(s.caption||s.hashtags.length) out.push("الكابشن:",[s.caption,s.hashtags.join(" ")].filter(Boolean).join("\n"),"");
+  if(s.hook) out.push("الهوك:",s.hook,"");
   const lines=s.scenes.map(x=>String(x.say||"").trim()).filter(Boolean);
-  if(lines.length) out.push("السكريبت:",...lines,"");
-  if(s.caption) out.push("الكابشن: "+s.caption);
-  if(s.hashtags.length) out.push(s.hashtags.join(" "));
+  if(lines.length) out.push("السكريبت:",...lines);
   return out.join("\n").trim();
 }
 function card(i){
